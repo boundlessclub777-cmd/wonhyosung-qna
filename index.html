@@ -271,6 +271,24 @@
   }
   .ref p { margin: 0; font-size: 0.95rem; color: var(--muted); }
   .ref .t { display: block; font-weight: 700; color: var(--ink-strong); font-size: 1rem; margin-bottom: 0.15rem; }
+  .ref-links {
+    margin-top: 0.6rem;
+    padding-top: 0.6rem;
+    border-top: 1px dashed var(--line);
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .ref-links a {
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: var(--navy);
+    text-decoration: none;
+    line-height: 1.55;
+  }
+  .ref-links a::after { content: " 기사 보기 →"; font-weight: 800; white-space: nowrap; }
+  .ref-links a:hover { text-decoration: underline; }
+  .ref-links a:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; border-radius: 2px; }
 
   /* 주장/입장 블록 */
   .claim-block { margin: 0 0 2.6rem; }
@@ -524,10 +542,17 @@
         <div class="ref">
           <span class="tag">참고 언론보도</span>
           <p><span class="t">한남2구역 대안설계 인허가 문제</span>대우건설이 시공사 선정 당시 고도제한 완화를 공약했으나 서울시 인허가를 받지 못해 완화 여부가 불투명해지며, 시공사 재신임 여부를 총회에 부치는 논란이 발생한 사례 (2023. 11. 보도)</p>
+          <div class="ref-links">
+            <a href="https://www.ajunews.com/view/20240318161647647" target="_blank" rel="noopener">「백화점 입점에 고도제한 완화까지 무산 위기… 시공사 '공수표'에 조합원만 피해」 (아주경제)</a>
+          </div>
         </div>
         <div class="ref">
           <span class="tag">참고 언론보도</span>
           <p><span class="t">성수4지구 대안설계 입찰 위반 논란</span>대우건설 제안 설계의 '250m 고도제한 준수' 여부(옥상 구조물의 '8분의 1' 면적 비율 규정)를 둘러싸고 실현 가능성 공방이 확산된 사례 (2026. 7. 보도)</p>
+          <div class="ref-links">
+            <a href="https://www.upkoreanews.kr/news/articleView.html?idxno=99089" target="_blank" rel="noopener">「성수4지구 고도제한 논란, 대우건설 '8분의 1' 규정 준수 여부가 핵심」 (기사 원문)</a>
+            <a href="https://www.smarttoday.co.kr/ko-kr/articles/103533" target="_blank" rel="noopener">「1.4조 성수4지구 수주전, 대우건설 사과에도 '혼선 지속'」 (스마트투데이)</a>
+          </div>
         </div>
       </div>
     </article>
@@ -685,7 +710,7 @@
       </div>
       <div class="a">
         <p>조합은 SKM과 매주 설계회의를 진행하며 통합심의 준비를 속도감 있게 추진하고 있습니다.</p>
-        <p>통합심의 절차는 통상 약 8개월에서 1년 정도의 기간이 소요되는 만큼, 조합은 사업의 연속성과 추진 속도를 극대화하기 위해 <strong>통합심의와 새로운 시공사 선정 절차를 동시에 추진</strong>하여 사업 지연 리스크는 사실상 발생하지 않으며, 사업은 계획된 일정에 따라 어떠한 차질이나 중단 없이 안정적으로 추진될 것입니다.</p>
+        <p>통합심의 절차는 통상 약 8개월에서 1년 정도의 기간(설계도서 작성 약 4~6개월, 통합심의 약 4개월~6개월)이 소요되는 만큼, 조합은 사업의 연속성과 추진 속도를 극대화하기 위해 <strong>통합심의와 새로운 시공사 선정 절차를 동시에 추진</strong>하여 사업 지연 리스크는 사실상 발생하지 않으며, 사업은 계획된 일정에 따라 어떠한 차질이나 중단 없이 안정적으로 추진될 것입니다.</p>
 
         <div class="timeline">
           <div class="stage">
